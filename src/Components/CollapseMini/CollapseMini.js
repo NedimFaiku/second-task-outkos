@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import Text from './Text'
 import './collapseMini.css'
-import CollapseNested from './CollapseNested';
 
 function CollapseMini({ img, name, articles }) {
-    //to open inside content
+ 
     const [collapse, setCollapse] = useState(false);
 
     const [collapse1, setCollapse1] = useState(false);
@@ -43,7 +42,7 @@ function CollapseMini({ img, name, articles }) {
                         </div>
                     </div>
 
-                    {/* {collapse && <CollapseNested articles={articles}/>} */}
+                    
                     {collapse &&
                         <div className='collapsed-answer'>
                             <div className='box-answer' key={1}>
